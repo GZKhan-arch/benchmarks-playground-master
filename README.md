@@ -26,3 +26,46 @@ Why do all of this? This set of things is designed to include features that are 
 - Threading model (async in .NET)
 
 Why not build a more realistic app, with real data access? Well, increasing the size and scope of what's being tested decreases the chance that we get something wrong.
+
+
+
+![GitHub repo size](https://img.shields.io/github/repo-size/GZKhan-arch/benchmarks-playground-master)
+![GitHub stars](https://img.shields.io/github/stars/GZKhan-arch/benchmarks-playground-master)
+![GitHub forks](https://img.shields.io/github/forks/GZKhan-arch/benchmarks-playground-master)
+![GitHub issues](https://img.shields.io/github/issues/GZKhan-arch/benchmarks-playground-master)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/GZKhan-arch/benchmarks-playground-master)
+![GitHub last commit](https://img.shields.io/github/last-commit/GZKhan-arch/benchmarks-playground-master)
+![GitHub license](https://img.shields.io/github/license/GZKhan-arch/benchmarks-playground-master)
+
+# What is this
+
+Some basic benchmarks across different cloud-native stacks for testing performance under resource limits. I'm specifically investigating how different tech stacks because when using CPU or memory l[...]
+
+## How is this tested
+
+The `benchmarks.json` file can be used with [aspnet/Benchmarks](https://github.com/aspnet/Benchmarks). The ASP.NET Core team has this deployed for our own use (sorry, can't give access but the whol[...]
+
+## How I wrote these
+
+I'm trying to understand where you land by writing applications using various **mainstream** tech stacks and using **mainstream** practices. If your team had to write 30 services in stack XYZ how [...]
+
+I specifically want to avoid doing anything esoteric in the code, or doing lots of scenario-specific tuning in the app/config. I want these to honestly reflect the common practices.
+
+[Techempower](https://www.techempower.com/benchmarks/) exists to serve as a benchmarking competion, the code samples here are intended to track more realistic code samples.
+
+## What does the app do
+
+The app is a tiny REST API. It serves a really small JSOM payload. It also makes an outgoing HTTP call to itself.
+
+Why do all of this? This set of things is designed to include features that are critical to the microservices programming style (for REST/JSON).
+
+- Incoming HTTP
+- JSON Serialization
+- Outgoing HTTP
+- Threading model (async in .NET)
+
+Why not build a more realistic app, with real data access? Well, increasing the size and scope of what's being tested decreases the chance that we get something wrong.
+
+````
+
+Ready to update your README.md with these badges? (If you’re using GitHub Actions or code coverage in the future, more badges can be added anytime!) Let me know if you want me to proceed and push this update.
